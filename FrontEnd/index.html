@@ -1,0 +1,231 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        /*some defualt values*/
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body {
+            background-color: darkcyan;
+        }
+    
+    /*-----------------------------------------*/
+    .container {
+        display: flex;
+        flex-flow: column;
+        background-color: rgb(45, 103, 129);
+       /* height: 100vh; */
+    
+    }
+    
+    /*--------------------------- Done*/ 
+    /* Header Part */  
+    .header{
+        background-color: #F2F8FD;
+        flex: 0 1 auto;
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;  
+    }
+
+
+    .logo{
+        display: flex;
+        flex-flow: row;
+    }
+    #logo1 {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding-left: 5px;
+    }
+
+    #logo2 {
+        display: inline;
+        font-size: 30;
+        color: #41B619;
+        justify-content: space-around;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .header .logo span {
+        font-size: larger;
+        margin-right: 10px;
+    } 
+    .header .navbar a {
+        font-size: 16px;
+        padding:0 10px;
+        color:#666;
+    }
+
+    .header .navbar a:hover {
+        color: #E5F0FF;
+    }
+
+    /* nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn Done*/
+    
+    .footer {
+        /*fills remaining space*/
+        background-color: #76FEC5;
+        flex: 0 1 40px;
+    }
+
+    
+    .center {
+        /*fixed height*/
+        background-color: white;
+        /* flex: 1 1 auto; */
+        display: flex;
+        flex-flow: row;
+        margin: 0;
+        flex-grow: 1;
+    }
+    
+    /*----------------------------------------- Done*/
+    .aside {
+        background-color: whitesmoke;
+        flex: 0 1 250px;    
+        display: flex;
+        flex-flow: column; 
+    }
+    
+    .aside img{
+        width: 300px;
+        height: 160px;
+    } 
+    .logoASide{
+        height: 76;
+        display: flex;
+        flex-flow: row;
+        padding-left: 60px;
+        line-height: 70px; 
+        padding-top: 15px;
+    }
+    #logoA1 {
+        line-height: 70px; 
+        width: 50px;
+        height: 50px;
+    }
+
+    #logoA2 {
+        display: inline-block;
+        font-size: 20px;
+        color: #2398AB;
+        justify-content: space-around;
+        text-align: left;
+        line-height: 40px;
+    }
+    /*-----------------------------------------*/
+    .main {
+        background-color: darkblue;
+        /*flex: 1 1 auto; */
+        display: flex;
+        flex-flow: column;
+        flex-grow: 1;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .first-section {
+        background-color: #76FEC5;
+        flex: 0 1 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: #EDF6E5;
+        height: 10px;
+        color: #1771F1;
+    }
+    .first-section p {
+        padding: 40px;
+    }
+
+    .second-section {
+        background-color: #F2F8FD;
+        flex: 0 1 75%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: #EDF6E5;
+        color: #58595B;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* btn Done*/ 
+
+    .up {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #F85C50;
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        padding:0 8px 5px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+</style>
+
+
+</head>  
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#" class="logo"> 
+                <div id = "logo1"><img src="support.svg" alt="not exist pic"></div>
+                <div id = "logo2"><b> <i> </i>Clinic Managment System  </i> </b></div>
+            </a>
+
+            <nav class="navbar">
+                <a href="#">Patients</a>
+                <a href="#">Patient Medical History</a>
+                <a href="#">Doctors</a>
+                <a href="#">Doctor Specialization</a>
+                <a href="#">apointments</a>
+            </nav>
+        </header>
+
+        <div class="center">
+            <div class="aside">
+                <div class="logoASide">
+                     <div ><img id = "logoA1" src="patient.svg" alt="not exist pic"></div>
+                     <div id = "logoA2"><b> <i> </i> Dashboard </i> </b></div>
+                </div>
+                <div class="content">
+                    <div class="i1"><img src="1.jpg" alt=""></div>
+                    <div class="i2"><img src="2.jpg" alt=""></div>
+                    <div class="i3"><img src="3.jpg" alt=""></div>    
+                </div>
+            </div>
+            <div class="main">
+                <div class="first-section">
+                    <p ><h1>What is a Clinic Management System?</h1> </p>
+                </div>
+                <div class="second-section">
+                    <p > A Clinic Management System is an integrated information system for managing all aspects of a medical clinic's operations such as medical, financial, administrative, legal, and compliance. It includes electronic health records, business intelligence, and revenue cycle management. Medical health facilities improve the quality of healthcare services, reduce operating costs, and improve the revenue cycle by using such clinic management systems. Clinic Management System typically includes Outpatient Management, Pharmacy, Radiology, Inventory, eClaim, Mobile Apps, Tablet Versions, Online Scheduling, Secured Messaging, Doctor and Patient Portals, Accounting, HR/Payroll, Alert Software, Feedback, Biometric Integration, HL7/Integrated PACS, and Business Intelligence. eClinic Systems, our Clinic Management System allows users to enter and track patients, schedule and track patient appointments, send out insurance claims and patient statements as part of the collection process, process insurance, patient and third party payments, and generate reports for the administrative and clinical staff of the practice. eClinic systems also involves keeping up to date large sets of data including lists of diagnosis and procedures, lists of insurance companies, referring physicians, providers, facilities, and much more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    <span class="up">+</span>
+    
+</body>
+</html>
